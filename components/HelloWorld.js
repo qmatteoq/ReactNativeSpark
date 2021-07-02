@@ -5,20 +5,10 @@ import {
   Button
 } from 'react-native';
 
-const HelloWorld = (props) => {
-
-    const[count, setCount] = useState(0);
-
-    const increaseCounter = () => {
-        setCount(count+1);
-    }
-
+const HelloWorld = () => {
+    
     return(
-        <View>
-            <Text>Hello {props.name}</Text>
-            <Button title="Count!" onPress={increaseCounter} />
-            <Text>{count}</Text>
-        </View>
+   
     );
 }
 

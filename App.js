@@ -49,9 +49,7 @@
      </View>
    );
  };
- 
- import HelloWorld from './components/HelloWorld';
- import FilePicker from './components/FilePicker';
+
  
  const App = () => {
    const isDarkMode = useColorScheme() === 'dark';
@@ -68,20 +66,13 @@
          style={backgroundStyle}>
          <Header />
          <View
-           style={styles.acrylicBackground}>
-           <Section title="Hello community days!">
+             style={{
+              backgroundColor: isDarkMode ? Colors.black : Colors.white }}>
+           <Section title="Hello SPARK!">
              <Text>Edit <Text style={styles.highlight}>App.js</Text> to change this
              screen and then come back to see your edits.</Text>
            </Section>
-           <Section title="Hello world">
-             <HelloWorld name="Matteo" />
-           </Section>
-           <Section title="File picker">
-             <FilePicker />
-           </Section>
-           <Section title="Learn More">
-             <Text>Read the docs to discover what to do next:</Text>
-           </Section>
+          
          </View>
        </ScrollView>
      </SafeAreaView>
